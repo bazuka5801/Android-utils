@@ -2,6 +2,7 @@ apply plugin: 'maven-publish'
 
 buildscript {
     repositories {
+        google()
         mavenCentral()
         maven { url "https://maven.google.com/" }
     }
@@ -24,6 +25,7 @@ ext {
 
 allprojects {
     repositories {
+        google()
         mavenCentral()
     }
 }
