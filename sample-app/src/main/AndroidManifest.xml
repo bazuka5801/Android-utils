@@ -7,7 +7,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name="com.iknow.android.utilssample.Main">
+        <activity android:name="com.iknow.android.utilssample.Main" android:exported="True">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
