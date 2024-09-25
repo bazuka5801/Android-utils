@@ -1,3 +1,4 @@
+apply plugin: 'maven-publish'
 
 buildscript {
     repositories {
@@ -28,4 +29,17 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.bazuka5801'
+                artifactId = 'AndroidUtils'
+                version = '1.2.2'
+            }
+        }
+    }
 }
