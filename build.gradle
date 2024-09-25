@@ -3,6 +3,7 @@ apply plugin: 'maven-publish'
 buildscript {
     repositories {
         mavenCentral()
+        maven { url "https://maven.google.com/" }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.2.0'
